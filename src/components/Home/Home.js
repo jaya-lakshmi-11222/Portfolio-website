@@ -278,37 +278,77 @@
 
 
 
-// Home.js
+// Home.js 
+ 
+import React, { useEffect } from 'react'; 
+import { useLocation } from 'react-router-dom';
+ 
+// Import your sections in order 
+import HeaderPage from '../Header/Header'; 
+import MainSection from '../MainSection/Main'; 
+import AboutSection from '../AboutSection/About'; 
+import GitHubActivity from '../GithubSection/Gitactivity'; 
+// import Projects from '../ProjectSection/Project'; 
+// import Certifications from '../CertificateSection/Certificate'; 
+// import Contact from '../ContactSection/Contact'; 
+ 
+const Home = () => { 
+  const location = useLocation();
 
-import React from 'react';
+  useEffect(() => {
+    // Handle scrolling to specific sections based on URL hash
+    const handleScrollToSection = () => {
+      const hash = location.hash;
+      if (hash) {
+        // Remove the # from hash
+        const sectionId = hash.substring(1);
+        const element = document.getElementById(sectionId);
+        if (element) {
+          // Small delay to ensure DOM is ready
+          setTimeout(() => {
+            element.scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }, 100);
+        }
+      }
+    };
 
-// Import your sections in order
-import HeaderPage from '../Header/Header';
-import MainSection from '../MainSection/Main';
-import AboutSection from '../AboutSection/About';
-import GitHubActivity from '../GithubSection/Gitactivity';
-// import Projects from '../ProjectSection/Project';
-// import Certifications from '../CertificateSection/Certificate';
-// import Contact from '../ContactSection/Contact';
+    handleScrollToSection();
+  }, [location.hash]);
 
-const Home = () => {
-  return (
-    <div style={{ 
-      margin: 0, 
-      padding: 0,
-      // Ensure no gaps between sections
-      display: 'block'
-    }}>
-      <HeaderPage />
-      {/* Remove the padding-top wrapper div to eliminate gaps */}
-      <MainSection />
-      <AboutSection />
-      <GitHubActivity />
-      {/*<Projects />
-      <Certifications />
-      <Contact /> */}
-    </div>
-  );
-};
-
+  return ( 
+    <div style={{  
+      margin: 0,  
+      padding: 0, 
+      // Ensure no gaps between sections 
+      display: 'block' 
+    }}> 
+      <HeaderPage /> 
+      {/* Remove the padding-top wrapper div to eliminate gaps */} 
+      <div id="main">
+        <MainSection /> 
+      </div>
+      <div id="about">
+        <AboutSection /> 
+      </div>
+      <div id="github">
+        <GitHubActivity /> 
+      </div>
+      {/*
+      <div id="projects">
+        <Projects /> 
+      </div>
+      <div id="certifications">
+        <Certifications /> 
+      </div>
+      <div id="contact">
+        <Contact /> 
+      </div>
+      */} 
+    </div> 
+  ); 
+}; 
+ 
 export default Home;
