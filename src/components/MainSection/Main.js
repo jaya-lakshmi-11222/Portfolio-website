@@ -27,25 +27,25 @@ const MainSection = () => {
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://www.linkedin.com/in/jaya-lakshmi-gunnam',
+      url: 'https://www.linkedin.com/in/peri-reddy-vaka',
       color: '#0077B5'
     },
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com/jaya-lakshmi-11222',
+      url: 'https://github.com/perireddyvaka',
       color: '#333'
     },
     {
       name: 'Instagram',
       icon: Instagram,
-      url: 'https://www.instagram.com/jaya_gunnam?igsh=YW0xZ3MxZzUwMWo4',
+      url: 'https://www.instagram.com/peri_reddy_vaka/',
       color: '#E4405F'
     },
     {
       name: 'Email',
       icon: Mail,
-      url: 'mailto:jayalakshmigunnam1@gmail.com',
+      url: 'mailto:vakaperireddy59@gmail.com',
       color: '#EA4335'
     }
   ];
@@ -53,7 +53,7 @@ const MainSection = () => {
   // Function to handle resume download/view
   const handleResumeClick = () => {
     // Replace with your actual PDF path
-    const resumePath = '/Jaya_Gunnam Resume.pdf';
+    const resumePath = '/Perireddyvaka_resume.pdf';
     window.open(resumePath, '_blank');
   };
 
@@ -66,14 +66,14 @@ const MainSection = () => {
           <div className="intro-text">
             <p className="greeting">HELLO, <span className="name-label">I'm</span></p>
             <h1 className="name">
-              <span className="first-name">JAYA</span>
-              <span className="last-name">GUNNAM</span>
+              <span className="first-name">PERI REDDY</span>
+              <span className="last-name">VAKA</span>
             </h1>
           </div>
 
           <div className="description">
             <p>
-              From Andhra Pradesh, India. My area of Expertise includes MERN Stack & Machine Learning.
+              From Andhra Pradesh, India. My area of Expertise includes IoT platforms, machine learning, and full-stack development.
             </p>
           </div>
 

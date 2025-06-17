@@ -12,27 +12,27 @@ const AchievementPage = () => {
       icon: <Award size={48} />,
       title: "Professional Certification",
       description: "Earned industry-recognized certification in web development, demonstrating expertise in modern technologies and best practices.",
-      linkedInUrl: "#" // Replace with your actual LinkedIn post URL
+      linkedInUrl: "https://www.linkedin.com/in/peri-reddy-vaka" // Replace with your actual LinkedIn post URL
     },
     {
       id: 2,
       icon: <Trophy size={48} />,
       title: "Project Excellence Award",
       description: "Recognized for outstanding performance and innovation in delivering high-quality software solutions that exceed client expectations.",
-      linkedInUrl: "#" // Replace with your actual LinkedIn post URL
+      linkedInUrl: "https://www.linkedin.com/in/peri-reddy-vaka" // Replace with your actual LinkedIn post URL
     },
     {
       id: 3,
       icon: <Medal size={48} />,
       title: "Technical Leadership",
       description: "Successfully led cross-functional teams to deliver complex projects on time while maintaining code quality and team collaboration.",
-      linkedInUrl: "#" // Replace with your actual LinkedIn post URL
+      linkedInUrl: "https://www.linkedin.com/in/peri-reddy-vaka" // Replace with your actual LinkedIn post URL
     }
   ];
 
   const handleViewAllAchievements = () => {
     // Add your logic here - could navigate to a detailed achievements page or LinkedIn profile
-    window.open("https://linkedin.com/in/yourprofile", "_blank");
+    window.open("https://www.linkedin.com/in/peri-reddy-vaka", "_blank");
   };
 
   return (

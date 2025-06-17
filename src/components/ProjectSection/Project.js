@@ -7,55 +7,55 @@ const Projects = () => {
     {
       id: 1,
       image: "https://via.placeholder.com/400x250/4ECDC4/ffffff?text=Project+1",
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with modern UI/UX and secure payment integration.",
+      title: "City IoT Operating Platform (ctOP)",
+      description: "Developed a scalable oneM2M-compliant IoT platform with predictive maintenance, system health monitoring, and load balancing for high availability and performance.",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       repoUrl: "https://github.com/yourusername/project1"
     },
     {
       id: 2,
       image: "https://via.placeholder.com/400x250/44A08D/ffffff?text=Project+2",
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates and team collaboration features.",
+      title: "Digital Twin for Water Networks",
+      description: "Designed an interactive frontend for real-time water flow simulation using sensor data, integrated with backend systems and digital twin actuation engines.",
       technologies: ["React", "Firebase", "Material-UI", "WebSocket"],
       repoUrl: "https://github.com/yourusername/project2"
     },
     {
       id: 3,
       image: "https://via.placeholder.com/400x250/667eea/ffffff?text=Project+3",
-      title: "Weather Dashboard",
-      description: "Interactive weather dashboard with forecasts, maps, and personalized weather alerts.",
+      title: "Substation Monitoring Dashboard (BYPL)",
+      description: "Built a real-time energy substation monitoring dashboard using ReactJS and Tableau, ensuring live data synchronization across backend services and UI layers.",
       technologies: ["JavaScript", "OpenWeather API", "Chart.js", "CSS3"],
       repoUrl: "https://github.com/yourusername/project3"
     },
     {
       id: 4,
       image: "https://via.placeholder.com/400x250/764ba2/ffffff?text=Project+4",
-      title: "Social Media App",
-      description: "Modern social media platform with real-time messaging and content sharing capabilities.",
+      title: "Job Board Platform",
+      description: "Developed MERN-based job platform with role-based access, listings, and application tracking.",
       technologies: ["React Native", "Express.js", "PostgreSQL", "Socket.io"],
       repoUrl: "https://github.com/yourusername/project4"
     },
     {
       id: 5,
       image: "https://via.placeholder.com/400x250/f093fb/ffffff?text=Project+5",
-      title: "Portfolio Website",
-      description: "Responsive portfolio website showcasing projects with smooth animations and modern design.",
+      title: "Sentiment Analysis Tool",
+      description: "Built a machine learning model to predict public sentiment and preferences using supervised learning.",
       technologies: ["React", "GSAP", "Tailwind CSS", "Framer Motion"],
       repoUrl: "https://github.com/yourusername/project5"
     },
     {
       id: 6,
       image: "https://via.placeholder.com/400x250/4facfe/ffffff?text=Project+6",
-      title: "Data Visualization Tool",
-      description: "Interactive data visualization dashboard for business analytics and reporting.",
+      title: "Conversational Chatbot",
+      description: "Built and deployed a chatbot using Google Dialogflow to automate user support queries.",
       technologies: ["D3.js", "React", "Python", "Flask"],
       repoUrl: "https://github.com/yourusername/project6"
     }
   ];
 
   const handleViewProject = (repoUrl) => {
-    window.open(repoUrl, '_blank');
+    window.open('https://github.com/perireddyvaka', '_blank');
   };
 
   const handleViewMore = () => {
@@ -103,7 +103,7 @@ const Projects = () => {
         </div>
         
         <div className="view-more-container">
-          <button className="view-more-button" onClick={handleViewMore}>
+          <button className="view-more-button" onClick={() => handleViewProject('https://github.com/perireddyvaka')}>
             View More
           </button>
         </div>

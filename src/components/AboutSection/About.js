@@ -14,67 +14,94 @@ const AboutSection = () => {
   }, []);
 
   const skills = [
-    { name: 'React.JS', logo: '../Assets/logos/react.png' },
-    { name: 'HTML', logo: '/logos/html.png' },
-    { name: 'CSS', logo: '/logos/css.png' },
-    { name: 'Responsive Design', logo: '/logos/responsive.png' },
-    { name: 'Python', logo: '/logos/python.png' },
-    { name: 'Machine Learning', logo: '/logos/ml.png' },
-    { name: 'MinIO', logo: '/logos/minio.png' },
-    { name: 'MongoDB', logo: '/logos/mongodb.png' },
-    { name: 'PostgreSQL', logo: '/logos/postgresql.png' },
-    { name: 'Git', logo: '/logos/git.png' },
-    { name: 'GitHub', logo: '/logos/github.png' },
-    { name: 'Postman', logo: '/logos/postman.png' },
-    { name: 'Figma', logo: '/logos/figma.png' },
-    { name: 'Material-UI', logo: '/logos/material-ui.png' },
-    { name: 'Ant Design', logo: '/logos/ant-design.png' }
-  ];
+  // Technologies
+  { name: 'Full Stack Development', logo: '/logos/full-stack.png' },
+  { name: 'Machine Learning', logo: '/logos/machine-learning.png' },
+  { name: 'Data Analysis', logo: '/logos/data-analysis.png' },
+  { name: 'DevOps', logo: '/logos/devops.png' },
+
+  // Programming Languages
+  { name: 'Python', logo: '/logos/python.png' },
+  { name: 'JavaScript', logo: '/logos/javascript.png' },
+  { name: 'Go', logo: '/logos/go.png' },
+  { name: 'SQL', logo: '/logos/sql.png' },
+  { name: 'HTML', logo: '/logos/html-5.png' },
+  { name: 'CSS', logo: '/logos/css-3.png' },
+
+  // Frameworks
+  { name: 'FastAPI', logo: '/logos/fastapi.png' },
+  { name: 'ReactJS', logo: '/logos/react-logo.png' },
+  { name: 'Node.js', logo: '/logos/nodejs.png' },
+  { name: 'ExpressJS', logo: '/logos/expressjs.png' },
+  { name: 'Next.js', logo: '/logos/nextjs.png' },
+  { name: 'Chart.js', logo: '/logos/chartjs.png' },
+  { name: 'Beego', logo: '/logos/beego.jpg' },
+  { name: 'Echo', logo: '/logos/echo.png' },
+
+  // Databases
+  { name: 'PostgreSQL', logo: '/logos/postgre.png' },
+  { name: 'MySQL', logo: '/logos/mysql.png' },
+  { name: 'MongoDB', logo: '/logos/mongodb.png' },
+  { name: 'Prometheus', logo: '/logos/prometheus.png' },
+  { name: 'InfluxDB', logo: '/logos/influxdb.png' },
+
+  // Tools
+  { name: 'Tableau', logo: '/logos/tableau.png' },
+  { name: 'Grafana', logo: '/logos/grafana.png' },
+  { name: 'GitHub', logo: '/logos/github.png' },
+  { name: 'Docker', logo: '/logos/docker.png' },
+  { name: 'Jenkins', logo: '/logos/jenkins.png' },
+  { name: 'Postman', logo: '/logos/postman icon.png' },
+  { name: 'Locust', logo: '/logos/locust.png' },
+  { name: 'JMeter', logo: '/logos/jmeter.png' },
+  { name: 'Material-UI', logo: '/logos/material-ui.png' },
+  { name: 'Figma', logo: '/logos/figma.png' },
+
+  // Other Skills
+  { name: 'Problem Solving', logo: '/logos/problem-solving.png' },
+  { name: 'Leadership', logo: '/logos/leadership.png' },
+  { name: 'Communication', logo: '/logos/communication.png' },
+  { name: 'Critical Thinking', logo: '/logos/critical-thinking.png' }
+];
+
 
   const experienceData = [
     {
-      company: 'Tech Solutions Inc.',
-      position: 'Full Stack Developer',
-      duration: '2023 - Present',
-      description: 'Developed and maintained web applications using React.js, Node.js, and MongoDB. Collaborated with cross-functional teams to deliver high-quality software solutions.',
-      expanded: false
+      company: 'Smart City Living Lab @ IIIT Hyderabad',
+      position: 'Junior Software Engineer',
+      duration: 'Oct 2024 – Present',
+      description: 'Designed and developed full-stack IoT applications for smart cities using the MERN stack, with real-time dashboards, CI/CD integration (Docker & GitHub Actions), and collaboration with urban mission stakeholders.',
+      expanded: true
     },
     {
-      company: 'Digital Innovations Ltd.',
-      position: 'Frontend Developer',
-      duration: '2022 - 2023',
-      description: 'Created responsive user interfaces using React.js and modern CSS frameworks. Implemented UI/UX designs and optimized application performance.',
-      expanded: false
-    },
-    {
-      company: 'StartUp Hub',
-      position: 'Junior Developer',
-      duration: '2021 - 2022',
-      description: 'Assisted in building web applications and learned modern development practices. Contributed to various projects using HTML, CSS, JavaScript, and Python.',
+      company: 'Smart City Living Lab @ IIIT Hyderabad',
+      position: 'Software Research Intern',
+      duration: 'Feb 2024 – Sep 2024',
+      description: 'Collaborated in R\&D for urban innovation, developing IoT-based smart city systems by translating infrastructure challenges into scalable software solutions with domain experts.',
       expanded: false
     }
   ];
 
   const educationData = [
     {
-      institution: 'Lovely Professional University, Phagwara, India',
-      degree: 'BTech in Computer Science',
-      duration: '2019 - 2023',
-      description: 'Completed Bachelor of Technology in Computer Science with a GPA of 7.75/10. The program provided a solid foundation in computer science principles, including software development, data structures, algorithms, and system design.',
+      institution: 'Kakinada Institute of Engineering and Technology, India',
+      degree: 'BTech in Computer Science with specialization Artificial Intelligence & Data Science',
+      duration: '2020 - 2024',
+      description: 'Completed Bachelor of Technology in Computer Science with specialization AI&DS with GPA of 7.50/10. The program provided a solid foundation in computer science principles,Artificial Intelligence and Data Science including software development, data structures, algorithms, and system design.',
       expanded: true
     },
     {
-      institution: 'Narayana Junior College, Gudivada, India',
-      degree: 'Intermediate in Science',
-      duration: '2017 - 2019',
-      description: 'Completed intermediate education with focus on Mathematics, Physics, and Chemistry, building strong analytical and problem-solving skills.',
+      institution: 'Sri Saraswathi Junior College, India',
+      degree: 'Intermediate in MPC',
+      duration: '2018 - 2020',
+      description: 'Completed intermediate education with focus on Mathematics, Physics, and Chemistry with GPA of 9.09/10, building strong analytical and problem-solving skills.',
       expanded: false
     },
     {
-      institution: 'Dr. KKR Gowtham Concept School, Gudivada, India',
+      institution: 'Sri Saraswathi High School, India',
       degree: 'Secondary Education',
-      duration: '2016 - 2017',
-      description: 'Completed secondary education with excellent academic performance and developed foundational knowledge across various subjects.',
+      duration: '2017 - 2018',
+      description: 'Completed secondary education with excellent academic performance with GPA of 9.08/10 and developed foundational knowledge across various subjects.',
       expanded: false
     }
   ];
@@ -195,7 +222,7 @@ const AboutSection = () => {
           <h1 className="about-section-main-title-heading">About</h1>
           <p className="about-section-description-paragraph">
             Passionate developer with expertise in modern web technologies<br/>
-            and a strong foundation in computer science principles.
+            and a strong foundation in computer science principles with Artificial Intelligence & Data Science.
           </p>
         </div>
 
