@@ -283,16 +283,16 @@
 import React, { useEffect } from 'react'; 
 import { useLocation } from 'react-router-dom';
  
-// Import your sections in order 
-import HeaderPage from '../Header/Header'; 
-import MainSection from '../MainSection/Main'; 
-import AboutSection from '../AboutSection/About'; 
-import GitHubActivity from '../GithubSection/Gitactivity'; 
-import Projects from '../ProjectSection/Project'; 
-// import Certifications from '../CertificateSection/Certificate'; 
-// import Contact from '../ContactSection/Contact'; 
- 
-const Home = () => { 
+// Import your sections in order
+import HeaderPage from '../Header/Header';
+import MainSection from '../MainSection/Main';
+import AboutSection from '../AboutSection/About';
+import GitHubActivity from '../GithubSection/Gitactivity';
+import Projects from '../ProjectSection/Project';
+import AchievementPage from '../AchievementSection/Achievement.js';
+import ContactPage from '../ContactSection/Contact';
+
+const Home = () => {
   const location = useLocation();
 
   useEffect(() => {
@@ -339,13 +339,12 @@ const Home = () => {
       <div id="projects">
         <Projects /> 
       </div>
-      {/*<div id="certifications">
-        <Certifications /> 
+      <div id="Achievements">
+        <AchievementPage /> 
       </div>
       <div id="contact">
-        <Contact /> 
+        <ContactPage /> 
       </div>
-      */} 
     </div> 
   ); 
 }; 

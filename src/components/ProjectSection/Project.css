@@ -22,7 +22,7 @@
 /* Projects Title */
 .projects-title {
   font-size: clamp(3rem, 8vw, 5rem);
-  font-weight: 900;
+  font-weight: 700;
   color: #333;
   margin-bottom: 3rem;
   letter-spacing: -0.02em;

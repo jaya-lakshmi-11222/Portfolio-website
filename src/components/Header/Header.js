@@ -57,10 +57,10 @@ const HeaderPage = () => {
               Projects
             </button>
             <button
-              onClick={() => scrollToSection('Certifications')}
+              onClick={() => scrollToSection('Achievements')}
               className="nav-link"
             >
-              Certifications
+              Achievements
             </button>
             <button
               onClick={() => scrollToSection('contact')}
