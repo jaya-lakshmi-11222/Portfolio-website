@@ -288,7 +288,7 @@ import HeaderPage from '../Header/Header';
 import MainSection from '../MainSection/Main'; 
 import AboutSection from '../AboutSection/About'; 
 import GitHubActivity from '../GithubSection/Gitactivity'; 
-// import Projects from '../ProjectSection/Project'; 
+import Projects from '../ProjectSection/Project'; 
 // import Certifications from '../CertificateSection/Certificate'; 
 // import Contact from '../ContactSection/Contact'; 
  
@@ -336,11 +336,10 @@ const Home = () => {
       <div id="github">
         <GitHubActivity /> 
       </div>
-      {/*
       <div id="projects">
         <Projects /> 
       </div>
-      <div id="certifications">
+      {/*<div id="certifications">
         <Certifications /> 
       </div>
       <div id="contact">
