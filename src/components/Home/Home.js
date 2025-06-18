@@ -278,13 +278,13 @@
 
 
 
-// Home.js 
- 
-import React, { useEffect } from 'react'; 
+// Home.js
+
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
- 
+
 // Import your sections in order
-import HeaderPage from '../Header/Header';
+// import HeaderPage from '../Header/Header';
 import MainSection from '../MainSection/Main';
 import AboutSection from '../AboutSection/About';
 import GitHubActivity from '../GithubSection/Gitactivity';
@@ -306,7 +306,7 @@ const Home = () => {
         if (element) {
           // Small delay to ensure DOM is ready
           setTimeout(() => {
-            element.scrollIntoView({ 
+            element.scrollIntoView({
               behavior: 'smooth',
               block: 'start'
             });
@@ -318,35 +318,62 @@ const Home = () => {
     handleScrollToSection();
   }, [location.hash]);
 
-  return ( 
-    <div style={{  
-      margin: 0,  
-      padding: 0, 
-      // Ensure no gaps between sections 
-      display: 'block' 
-    }}> 
-      <HeaderPage /> 
-      {/* Remove the padding-top wrapper div to eliminate gaps */} 
-      <div id="main">
-        <MainSection /> 
-      </div>
-      <div id="about">
-        <AboutSection /> 
-      </div>
-      <div id="github">
-        <GitHubActivity /> 
-      </div>
-      <div id="projects">
-        <Projects /> 
-      </div>
-      <div id="Achievements">
-        <AchievementPage /> 
-      </div>
-      <div id="contact">
-        <ContactPage /> 
-      </div>
-    </div> 
-  ); 
-}; 
- 
+  return (
+    <div>
+      <section id="main" className="mainHeroSection">
+        <MainSection />
+      </section>
+      <section id="about" className="mainAboutSection">
+        <AboutSection />
+      </section>
+      <section id="github" className="mainServicesSection">
+        <GitHubActivity />
+      </section>
+      <section id="projects" className="mainContactSection">
+        <Projects />
+      </section>
+      <section id="Achievements" className="mainServicesSection">
+        <AchievementPage />
+      </section>
+      <section id="contact" className="mainContactSection">
+        <ContactPage />
+      </section>
+
+
+
+      {/* <HeaderPage /> */}
+    </div>
+  );
+};
 export default Home;
+
+
+
+
+{/*import React from 'react';
+import HeroSection from './hero';
+import InfoPage from './info';
+import ServicesPage from './help';
+import Message from './message';
+import './Home.css';
+
+const HomePage = () => {
+  return (
+    <div className="mainContentWrapper">
+      <section id="hero" className="mainHeroSection">
+        <HeroSection />
+      </section>
+      <section id="info" className="mainAboutSection">
+        <InfoPage />
+      </section>
+      <section id="service" className="mainServicesSection">
+        <ServicesPage />
+      </section>
+      <section id="message" className="mainContactSection">
+        <Message />
+      </section>
+    </div>
+  );
+};
+
+export default HomePage; */}

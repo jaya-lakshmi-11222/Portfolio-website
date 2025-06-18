@@ -1,10 +1,19 @@
 //App.js 
  
 import React, { useState, useEffect, createContext, useContext } from 'react'; 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
-import HomePage from './components/Home/Home'; 
-import './App.css'; 
- 
+import { BrowserRouter as Router, Route, Routes, Outlet } from 'react-router-dom'; 
+import HomePage from './components/Home/Home';
+import Layout from "./components/Layout/layout";
+import './App.css';
+
+const LayoutWrapper = () => {
+  return (
+    <Layout>
+      <Outlet />
+    </Layout>
+  );
+};
+
 // Create Theme Context 
 const ThemeContext = createContext(); 
  
@@ -48,8 +57,9 @@ function App() {
         <div className="App"> 
           <main className="main-content"> 
             <Routes> 
-              <Route path="/" element={<HomePage />} /> 
-              <Route path="/#:section" element={<HomePage />} /> 
+              <Route element={<LayoutWrapper />}>
+                <Route path="/" element={<HomePage />} />
+              </Route>
             </Routes> 
           </main> 
         </div> 
