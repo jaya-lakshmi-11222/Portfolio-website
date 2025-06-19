@@ -1,5 +1,5 @@
-//App.js 
- 
+//App.js
+
 import React, { useState, useEffect, createContext, useContext } from 'react'; 
 import { BrowserRouter as Router, Route, Routes, Outlet } from 'react-router-dom'; 
 import HomePage from './components/Home/Home';
