@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { useTheme } from '../../App';
 import './Contact.css';
 
@@ -11,6 +12,8 @@ const ContactPage = () => {
     message: ''
   });
 
+  const [statusMessage, setStatusMessage] = useState('');
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -21,16 +24,41 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
-    // You can add your form submission logic here
+
+    const templateParams = {
+      from_name: formData.fullName,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message
+    };
+
+    emailjs.send(
+      'service_2bacz0b',
+      'template_5nfpfd8',
+      templateParams,
+      'JN1PTwAsQ6tbtFiRA'
+    )
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      setStatusMessage('Message sent successfully!');
+      setFormData({
+        fullName: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    })
+    .catch((err) => {
+      console.error('FAILED...', err);
+      setStatusMessage('Failed to send message. Please try again.');
+    });
   };
 
   return (
     <section id="contact" className={`contact-section ${isDarkMode ? 'dark' : 'light'}`}>
       <div className="contact-container">
         <h2 className="contact-heading">Contact</h2>
-        
+
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-row">
             <div className="form-group">
@@ -56,7 +84,7 @@ const ContactPage = () => {
               />
             </div>
           </div>
-          
+
           <div className="form-group">
             <input
               type="text"
@@ -68,7 +96,7 @@ const ContactPage = () => {
               className="form-input"
             />
           </div>
-          
+
           <div className="form-group">
             <textarea
               name="message"
@@ -80,10 +108,11 @@ const ContactPage = () => {
               rows="6"
             />
           </div>
-          
+
           <button type="submit" className="submit-btn">
             Send Message
           </button>
+          {statusMessage && <p className="status-message">{statusMessage}</p>}
         </form>
       </div>
     </section>

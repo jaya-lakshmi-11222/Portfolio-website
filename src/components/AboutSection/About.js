@@ -4,6 +4,7 @@ import './About.css';
 
 const AboutSection = () => {
   const [activeTab, setActiveTab] = useState('Skills');
+  const [activeSkillCategory, setActiveSkillCategory] = useState('Technologies');
   const [isAnimated, setIsAnimated] = useState(false);
 
   useEffect(() => {
@@ -13,57 +14,57 @@ const AboutSection = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const skills = [
-  // Technologies
-  { name: 'Full Stack Development', logo: '/logos/full-stack.png' },
-  { name: 'Machine Learning', logo: '/logos/machine-learning.png' },
-  { name: 'Data Analysis', logo: '/logos/data-analysis.png' },
-  { name: 'DevOps', logo: '/logos/devops.png' },
-
-  // Programming Languages
-  { name: 'Python', logo: '/logos/python.png' },
-  { name: 'JavaScript', logo: '/logos/javascript.png' },
-  { name: 'Go', logo: '/logos/go.png' },
-  { name: 'SQL', logo: '/logos/sql.png' },
-  { name: 'HTML', logo: '/logos/html-5.png' },
-  { name: 'CSS', logo: '/logos/css-3.png' },
-
-  // Frameworks
-  { name: 'FastAPI', logo: '/logos/fastapi.png' },
-  { name: 'ReactJS', logo: '/logos/react-logo.png' },
-  { name: 'Node.js', logo: '/logos/nodejs.png' },
-  { name: 'ExpressJS', logo: '/logos/expressjs.png' },
-  { name: 'Next.js', logo: '/logos/nextjs.png' },
-  { name: 'Chart.js', logo: '/logos/chartjs.png' },
-  { name: 'Beego', logo: '/logos/beego.jpg' },
-  { name: 'Echo', logo: '/logos/echo.png' },
-
-  // Databases
-  { name: 'PostgreSQL', logo: '/logos/postgre.png' },
-  { name: 'MySQL', logo: '/logos/mysql.png' },
-  { name: 'MongoDB', logo: '/logos/mongodb.png' },
-  { name: 'Prometheus', logo: '/logos/prometheus.png' },
-  { name: 'InfluxDB', logo: '/logos/influxdb.png' },
-
-  // Tools
-  { name: 'Tableau', logo: '/logos/tableau.png' },
-  { name: 'Grafana', logo: '/logos/grafana.png' },
-  { name: 'GitHub', logo: '/logos/github.png' },
-  { name: 'Docker', logo: '/logos/docker.png' },
-  { name: 'Jenkins', logo: '/logos/jenkins.png' },
-  { name: 'Postman', logo: '/logos/postman icon.png' },
-  { name: 'Locust', logo: '/logos/locust.png' },
-  { name: 'JMeter', logo: '/logos/jmeter.png' },
-  { name: 'Material-UI', logo: '/logos/material-ui.png' },
-  { name: 'Figma', logo: '/logos/figma.png' },
-
-  // Other Skills
-  { name: 'Problem Solving', logo: '/logos/problem-solving.png' },
-  { name: 'Leadership', logo: '/logos/leadership.png' },
-  { name: 'Communication', logo: '/logos/communication.png' },
-  { name: 'Critical Thinking', logo: '/logos/critical-thinking.png' }
-];
-
+  const skillsData = {
+    'Technologies': [
+      { name: 'Full Stack Development', logo: '/logos/full-stack.png' },
+      { name: 'Machine Learning', logo: '/logos/machine-learning.png' },
+      { name: 'Data Analysis', logo: '/logos/data-analysis.png' },
+      { name: 'DevOps', logo: '/logos/devops.png' }
+    ],
+    'Programming Languages': [
+      { name: 'Python', logo: '/logos/python.png' },
+      { name: 'JavaScript', logo: '/logos/javascript.png' },
+      { name: 'Go', logo: '/logos/go.png' },
+      { name: 'SQL', logo: '/logos/sql.png' },
+      { name: 'HTML', logo: '/logos/html-5.png' },
+      { name: 'CSS', logo: '/logos/css-3.png' }
+    ],
+    'Frameworks': [
+      { name: 'FastAPI', logo: '/logos/fastapi.png' },
+      { name: 'ReactJS', logo: '/logos/react-logo.png' },
+      { name: 'Node.js', logo: '/logos/nodejs.png' },
+      { name: 'ExpressJS', logo: '/logos/expressjs.png' },
+      { name: 'Next.js', logo: '/logos/nextjs.png' },
+      { name: 'Chart.js', logo: '/logos/chartjs.png' },
+      { name: 'Beego', logo: '/logos/beego.jpg' },
+      { name: 'Echo', logo: '/logos/echo.png' }
+    ],
+    'Databases': [
+      { name: 'PostgreSQL', logo: '/logos/postgre.png' },
+      { name: 'MySQL', logo: '/logos/mysql.png' },
+      { name: 'MongoDB', logo: '/logos/mongodb.png' },
+      { name: 'Prometheus', logo: '/logos/prometheus.png' },
+      { name: 'InfluxDB', logo: '/logos/influxdb.png' }
+    ],
+    'Tools': [
+      { name: 'Tableau', logo: '/logos/tableau.png' },
+      { name: 'Grafana', logo: '/logos/grafana.png' },
+      { name: 'GitHub', logo: '/logos/github.png' },
+      { name: 'Docker', logo: '/logos/docker.png' },
+      { name: 'Jenkins', logo: '/logos/jenkins.png' },
+      { name: 'Postman', logo: '/logos/postman icon.png' },
+      { name: 'Locust', logo: '/logos/locust.png' },
+      { name: 'JMeter', logo: '/logos/jmeter.png' },
+      { name: 'Material-UI', logo: '/logos/material-ui.png' },
+      { name: 'Figma', logo: '/logos/figma.png' }
+    ],
+    'Other Skills': [
+      { name: 'Problem Solving', logo: '/logos/problem-solving.png' },
+      { name: 'Leadership', logo: '/logos/leadership.png' },
+      { name: 'Communication', logo: '/logos/communication.png' },
+      { name: 'Critical Thinking', logo: '/logos/critical-thinking.png' }
+    ]
+  };
 
   const experienceData = [
     {
@@ -77,7 +78,7 @@ const AboutSection = () => {
       company: 'Smart City Living Lab @ IIIT Hyderabad',
       position: 'Software Research Intern',
       duration: 'Feb 2024 – Sep 2024',
-      description: 'Collaborated in R\&D for urban innovation, developing IoT-based smart city systems by translating infrastructure challenges into scalable software solutions with domain experts.',
+      description: 'Collaborated in R&D for urban innovation, developing IoT-based smart city systems by translating infrastructure challenges into scalable software solutions with domain experts.',
       expanded: false
     }
   ];
@@ -130,8 +131,22 @@ const AboutSection = () => {
       case 'Skills':
         return (
           <div className="portfolio-skills-display-container">
+            {/* Skill Category Navigation */}
+            <div className="skills-category-navigation-container">
+              {Object.keys(skillsData).map((category) => (
+                <button
+                  key={category}
+                  className={`skill-category-button ${activeSkillCategory === category ? 'skill-category-active' : ''}`}
+                  onClick={() => setActiveSkillCategory(category)}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+            
+            {/* Skills Grid */}
             <div className="developer-skills-interactive-grid">
-              {skills.map((skill, index) => (
+              {skillsData[activeSkillCategory].map((skill, index) => (
                 <div key={index} className="individual-skill-showcase-item" style={{ animationDelay: `${index * 0.1}s` }}>
                   <div className="skill-technology-logo-wrapper">
                     <img src={skill.logo} alt={skill.name} />

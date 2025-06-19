@@ -9,7 +9,7 @@ const Projects = () => {
       image: "https://via.placeholder.com/400x250/4ECDC4/ffffff?text=Project+1",
       title: "City IoT Operating Platform (ctOP)",
       description: "Developed a scalable oneM2M-compliant IoT platform with predictive maintenance, system health monitoring, and load balancing for high availability and performance.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      technologies: ["Python", "fastAPI", "ReatJS", "oneM2M", "PostgreSQL"],
       repoUrl: "https://github.com/yourusername/project1"
     },
     {
@@ -17,7 +17,7 @@ const Projects = () => {
       image: "https://via.placeholder.com/400x250/44A08D/ffffff?text=Project+2",
       title: "Digital Twin for Water Networks",
       description: "Designed an interactive frontend for real-time water flow simulation using sensor data, integrated with backend systems and digital twin actuation engines.",
-      technologies: ["React", "Firebase", "Material-UI", "WebSocket"],
+      technologies: [" JavaScript", "python", "fastAPI", "PostgreSQL"],
       repoUrl: "https://github.com/yourusername/project2"
     },
     {
@@ -25,7 +25,7 @@ const Projects = () => {
       image: "https://via.placeholder.com/400x250/667eea/ffffff?text=Project+3",
       title: "Substation Monitoring Dashboard (BYPL)",
       description: "Built a real-time energy substation monitoring dashboard using ReactJS and Tableau, ensuring live data synchronization across backend services and UI layers.",
-      technologies: ["JavaScript", "OpenWeather API", "Chart.js", "CSS3"],
+      technologies: ["Tableau", "JavaScript", "Nodejs", "Expressjs", "Reactjs", "PostgreSQL"],
       repoUrl: "https://github.com/yourusername/project3"
     },
     {
@@ -33,7 +33,7 @@ const Projects = () => {
       image: "https://via.placeholder.com/400x250/764ba2/ffffff?text=Project+4",
       title: "Job Board Platform",
       description: "Developed MERN-based job platform with role-based access, listings, and application tracking.",
-      technologies: ["React Native", "Express.js", "PostgreSQL", "Socket.io"],
+      technologies: ["Nodejs", "Expressjs", "Reactjs", "mongodb"],
       repoUrl: "https://github.com/yourusername/project4"
     },
     {
@@ -41,7 +41,7 @@ const Projects = () => {
       image: "https://via.placeholder.com/400x250/f093fb/ffffff?text=Project+5",
       title: "Sentiment Analysis Tool",
       description: "Built a machine learning model to predict public sentiment and preferences using supervised learning.",
-      technologies: ["React", "GSAP", "Tailwind CSS", "Framer Motion"],
+      technologies: ["Machine learning", "Deepface algorithm"],
       repoUrl: "https://github.com/yourusername/project5"
     },
     {
@@ -49,7 +49,7 @@ const Projects = () => {
       image: "https://via.placeholder.com/400x250/4facfe/ffffff?text=Project+6",
       title: "Conversational Chatbot",
       description: "Built and deployed a chatbot using Google Dialogflow to automate user support queries.",
-      technologies: ["D3.js", "React", "Python", "Flask"],
+      technologies: ["Google dialogue flow"],
       repoUrl: "https://github.com/yourusername/project6"
     }
   ];

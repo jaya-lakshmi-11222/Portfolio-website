@@ -12,8 +12,8 @@ const GitHubActivity = ({ isDarkTheme = false }) => {
 
         <div className="github-graph-container">
           <img
-            src={`https://github-readme-activity-graph.vercel.app/graph?username=${githubUsername}&theme=${isDarkTheme ? 'react-dark' : 'github-compact'}&hide_border=true&area=true&custom_title=GitHub%20Activity%20Graph`}
-            alt="GitHub Activity Graph"
+            src={`https://ghchart.rshah.org/${isDarkTheme ? '4c1' : '4c1'}/${githubUsername}`}
+            alt="GitHub Contribution Chart"
             className="github-graph"
           />
         </div>
