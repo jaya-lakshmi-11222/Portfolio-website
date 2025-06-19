@@ -33,10 +33,10 @@ const ContactPage = () => {
     };
 
     emailjs.send(
-      'service_2bacz0b',
-      'template_5nfpfd8',
+      'service_e7uqzz9',
+      'template_5wdph1e',
       templateParams,
-      'JN1PTwAsQ6tbtFiRA'
+      'ySZWgAcv43-YMkiHr'
     )
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);

@@ -3,7 +3,7 @@ import './Gitactivity.css';
 
 const GitHubActivity = ({ isDarkTheme = false }) => {
   // Replace 'your-github-username' with your actual GitHub username
-  const githubUsername = 'perireddyvaka';
+  const githubUsername = 'jaya-lakshmi-11222';
 
   return (
     <section className={`github-activity-section ${isDarkTheme ? 'dark-theme' : ''}`}>

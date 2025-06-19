@@ -7,16 +7,16 @@ import './Sticky.css';
 const StickyIcons = () => {
   return (
     <div className="sticky-icon">
-      <a href="https://github.com/perireddyvaka" className="GitHub" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/jaya-lakshmi-11222" className="GitHub" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGithub} style={{ marginRight: '20px', marginLeft: '5px' }} /> GitHub
       </a>
-      <a href="https://www.instagram.com/peri_reddy_vaka/" className="Instagram" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/jaya_gunnam/" className="Instagram" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faInstagram} style={{ marginRight: '20px', marginLeft: '5px' }} /> Instagram
       </a>
-      <a href="https://www.linkedin.com/in/peri-reddy-vaka" className="Linkedin" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/jaya-lakshmi-gunnam" className="Linkedin" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faLinkedin} style={{ marginRight: '20px', marginLeft: '5px' }} /> Linkedin
       </a>
-      <a href="mailto:vakaperireddy59@gmail.com" className="Gmail" target="_blank" rel="noopener noreferrer">
+      <a href="mailto:jayalakshmigunnam1@gmail.com" className="Gmail" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: '20px', marginLeft: '5px' }} /> Gmail
       </a>
     </div>

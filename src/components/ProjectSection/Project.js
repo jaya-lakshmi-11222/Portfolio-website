@@ -6,56 +6,48 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      image: "https://via.placeholder.com/400x250/4ECDC4/ffffff?text=Project+1",
-      title: "City IoT Operating Platform (ctOP)",
-      description: "Developed a scalable oneM2M-compliant IoT platform with predictive maintenance, system health monitoring, and load balancing for high availability and performance.",
-      technologies: ["Python", "fastAPI", "ReatJS", "oneM2M", "PostgreSQL"],
-      repoUrl: "https://github.com/yourusername/project1"
+      image: "/logos/Language.png",
+      title: "Language Learning Tool (LLT)",
+      description: "Developed a full-stack Language Learning Tool using the MERN stack with MinIO for cloud storage, featuring role-based dashboards and RESTful API integration for user, class, and content management.",
+      technologies: ["React.JS", "MongoDB", "NodeJS", "Express.JS", "MinIO"],
+      repoUrl: "https://github.com/RCTS-IIITH/LLT-BTP"
     },
     {
       id: 2,
-      image: "https://via.placeholder.com/400x250/44A08D/ffffff?text=Project+2",
-      title: "Digital Twin for Water Networks",
-      description: "Designed an interactive frontend for real-time water flow simulation using sensor data, integrated with backend systems and digital twin actuation engines.",
-      technologies: [" JavaScript", "python", "fastAPI", "PostgreSQL"],
-      repoUrl: "https://github.com/yourusername/project2"
+      image: "/logos/Finance.png",
+      title: "Finance Hive",
+      description: "Contributed to Finance Hive, a responsive finance management web app built with the PERN stack, featuring scalable React.js components, secure RESTful APIs, and PostgreSQL integration for structured data handling.",
+      technologies: ["Python", "React.JS", "PostgreSQL"],
+      repoUrl: "https://github.com/jaya-lakshmi-11222/Finance-Hive"
     },
     {
       id: 3,
-      image: "https://via.placeholder.com/400x250/667eea/ffffff?text=Project+3",
-      title: "Substation Monitoring Dashboard (BYPL)",
-      description: "Built a real-time energy substation monitoring dashboard using ReactJS and Tableau, ensuring live data synchronization across backend services and UI layers.",
-      technologies: ["Tableau", "JavaScript", "Nodejs", "Expressjs", "Reactjs", "PostgreSQL"],
-      repoUrl: "https://github.com/yourusername/project3"
+      image: "/logos/Health.png",
+      title: "Health Prediction",
+      description: "Developed a predictive health monitoring system using the Random Forest algorithm to analyze individual dietary patterns and habits, delivering accurate forecasts and actionable insights for promoting healthier lifestyle decisions.",
+      technologies: ["Machine Learning", "Python", "HTML", "CSS"],
+      repoUrl: "https://github.com/jaya-lakshmi-11222/Health-desease-prediction/tree/main/ML"
     },
     {
       id: 4,
-      image: "https://via.placeholder.com/400x250/764ba2/ffffff?text=Project+4",
-      title: "Job Board Platform",
-      description: "Developed MERN-based job platform with role-based access, listings, and application tracking.",
-      technologies: ["Nodejs", "Expressjs", "Reactjs", "mongodb"],
-      repoUrl: "https://github.com/yourusername/project4"
+      image: "/logos/Speech.png",
+      title: "Speech Emotion Detection",
+      description: "Developed an emotion recognition system using the K-Nearest Neighbors (KNN) algorithm to analyze user-uploaded audio recordings, enabling accurate detection of emotional states for real-time feedback and analysis.",
+      technologies: ["Machine Learning", "Python", "React.JS", "CSS"],
+      repoUrl: "https://github.com/jaya-lakshmi-11222/Speech-Emotion-Detection"
     },
     {
       id: 5,
-      image: "https://via.placeholder.com/400x250/f093fb/ffffff?text=Project+5",
-      title: "Sentiment Analysis Tool",
-      description: "Built a machine learning model to predict public sentiment and preferences using supervised learning.",
-      technologies: ["Machine learning", "Deepface algorithm"],
-      repoUrl: "https://github.com/yourusername/project5"
-    },
-    {
-      id: 6,
-      image: "https://via.placeholder.com/400x250/4facfe/ffffff?text=Project+6",
-      title: "Conversational Chatbot",
-      description: "Built and deployed a chatbot using Google Dialogflow to automate user support queries.",
-      technologies: ["Google dialogue flow"],
-      repoUrl: "https://github.com/yourusername/project6"
+      image: '/logos/Disney.png',
+      title: "Disney Stories Website",
+      description: "Created a responsive web application for reading Disney cartoon stories, featuring an engaging user interface with integrated analytics via pie charts, a feedback form, and a structured data table for organized content presentation.",
+      technologies: ["React.JS", "CSS"],
+      repoUrl: "https://github.com/jaya-lakshmi-11222/Disney-Story-Website"
     }
   ];
 
   const handleViewProject = (repoUrl) => {
-    window.open('https://github.com/perireddyvaka', '_blank');
+    window.open('https://github.com/jaya-lakshmi-11222', '_blank');
   };
 
   const handleViewMore = () => {
@@ -103,7 +95,7 @@ const Projects = () => {
         </div>
         
         <div className="view-more-container">
-          <button className="view-more-button" onClick={() => handleViewProject('https://github.com/perireddyvaka')}>
+          <button className="view-more-button" onClick={() => handleViewProject('https://github.com/jaya-lakshmi-11222')}>
             View More
           </button>
         </div>

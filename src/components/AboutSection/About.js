@@ -16,69 +16,49 @@ const AboutSection = () => {
 
   const skillsData = {
     'Technologies': [
-      { name: 'Full Stack Development', logo: '/logos/full-stack.png' },
       { name: 'Machine Learning', logo: '/logos/machine-learning.png' },
-      { name: 'Data Analysis', logo: '/logos/data-analysis.png' },
-      { name: 'DevOps', logo: '/logos/devops.png' }
+      { name: 'Data Analysis', logo: '/logos/data-analysis.png' }
     ],
     'Programming Languages': [
       { name: 'Python', logo: '/logos/python.png' },
       { name: 'JavaScript', logo: '/logos/javascript.png' },
-      { name: 'Go', logo: '/logos/go.png' },
       { name: 'SQL', logo: '/logos/sql.png' },
       { name: 'HTML', logo: '/logos/html-5.png' },
       { name: 'CSS', logo: '/logos/css-3.png' }
     ],
     'Frameworks': [
-      { name: 'FastAPI', logo: '/logos/fastapi.png' },
       { name: 'ReactJS', logo: '/logos/react-logo.png' },
       { name: 'Node.js', logo: '/logos/nodejs.png' },
-      { name: 'ExpressJS', logo: '/logos/expressjs.png' },
-      { name: 'Next.js', logo: '/logos/nextjs.png' },
-      { name: 'Chart.js', logo: '/logos/chartjs.png' },
-      { name: 'Beego', logo: '/logos/beego.jpg' },
-      { name: 'Echo', logo: '/logos/echo.png' }
+      { name: 'ExpressJS', logo: '/logos/expressjs.png' }
     ],
     'Databases': [
-      { name: 'PostgreSQL', logo: '/logos/postgre.png' },
-      { name: 'MySQL', logo: '/logos/mysql.png' },
       { name: 'MongoDB', logo: '/logos/mongodb.png' },
-      { name: 'Prometheus', logo: '/logos/prometheus.png' },
-      { name: 'InfluxDB', logo: '/logos/influxdb.png' }
+      { name: 'PostgreSQL', logo: '/logos/postgre.png' },
+      { name: 'MySQL', logo: '/logos/mysql.png' }
     ],
     'Tools': [
-      { name: 'Tableau', logo: '/logos/tableau.png' },
-      { name: 'Grafana', logo: '/logos/grafana.png' },
       { name: 'GitHub', logo: '/logos/github.png' },
-      { name: 'Docker', logo: '/logos/docker.png' },
-      { name: 'Jenkins', logo: '/logos/jenkins.png' },
       { name: 'Postman', logo: '/logos/postman icon.png' },
-      { name: 'Locust', logo: '/logos/locust.png' },
-      { name: 'JMeter', logo: '/logos/jmeter.png' },
+      { name: 'AntDesign', logo: '/logos/mysql.png' },
       { name: 'Material-UI', logo: '/logos/material-ui.png' },
-      { name: 'Figma', logo: '/logos/figma.png' }
-    ],
-    'Other Skills': [
-      { name: 'Problem Solving', logo: '/logos/problem-solving.png' },
-      { name: 'Leadership', logo: '/logos/leadership.png' },
-      { name: 'Communication', logo: '/logos/communication.png' },
-      { name: 'Critical Thinking', logo: '/logos/critical-thinking.png' }
+      { name: 'Figma', logo: '/logos/figma.png' },
+      { name: 'MinIO', logo: '/logos/mysql.png' }
     ]
   };
 
   const experienceData = [
     {
-      company: 'Smart City Living Lab @ IIIT Hyderabad',
-      position: 'Junior Software Engineer',
-      duration: 'Oct 2024 – Present',
-      description: 'Designed and developed full-stack IoT applications for smart cities using the MERN stack, with real-time dashboards, CI/CD integration (Docker & GitHub Actions), and collaboration with urban mission stakeholders.',
+      company: 'RAJ REDDY CENTER FOR TECHNOLOGY AND SOCIETY @ IIIT Hyderabad',
+      position: 'Research Engineer',
+      duration: 'Feb 2025 – Apr 2025',
+      description: 'Developed a full-stack Language Learning Tool using the MERN stack with MinIO for cloud storage, featuring role-based dashboards and RESTful API integration for user, class, and content management.',
       expanded: true
     },
     {
-      company: 'Smart City Living Lab @ IIIT Hyderabad',
-      position: 'Software Research Intern',
-      duration: 'Feb 2024 – Sep 2024',
-      description: 'Collaborated in R&D for urban innovation, developing IoT-based smart city systems by translating infrastructure challenges into scalable software solutions with domain experts.',
+      company: 'Kiet-Hub, RCTS',
+      position: 'Full Stack Developer Intern',
+      duration: 'Aug 2024 – Mar 2025',
+      description: 'Contributed to "Finance Hive," a responsive finance management web app built with the PERN stack, featuring scalable React.js components, secure RESTful APIs, and PostgreSQL integration for structured data handling.',
       expanded: false
     }
   ];
@@ -87,22 +67,22 @@ const AboutSection = () => {
     {
       institution: 'Kakinada Institute of Engineering and Technology, India',
       degree: 'BTech in Computer Science with specialization Artificial Intelligence & Data Science',
-      duration: '2020 - 2024',
-      description: 'Completed Bachelor of Technology in Computer Science with specialization AI&DS with GPA of 7.50/10. The program provided a solid foundation in computer science principles,Artificial Intelligence and Data Science including software development, data structures, algorithms, and system design.',
+      duration: '2021 - 2025',
+      description: 'Completed Bachelor of Technology in Computer Science with specialization AI&DS with GPA of 75%. The program provided a solid foundation in computer science principles,Artificial Intelligence and Data Science including software development, data structures, algorithms, and system design.',
       expanded: true
     },
     {
-      institution: 'Sri Saraswathi Junior College, India',
+      institution: 'Vignan Junior College, India',
       degree: 'Intermediate in MPC',
-      duration: '2018 - 2020',
-      description: 'Completed intermediate education with focus on Mathematics, Physics, and Chemistry with GPA of 9.09/10, building strong analytical and problem-solving skills.',
+      duration: '2019 - 2021',
+      description: 'Completed intermediate education with focus on Mathematics, Physics, and Chemistry with 75%, building strong analytical and problem-solving skills.',
       expanded: false
     },
     {
-      institution: 'Sri Saraswathi High School, India',
+      institution: 'ZP High School, India',
       degree: 'Secondary Education',
-      duration: '2017 - 2018',
-      description: 'Completed secondary education with excellent academic performance with GPA of 9.08/10 and developed foundational knowledge across various subjects.',
+      duration: '2018 - 2019',
+      description: 'Completed secondary education with excellent academic performance with 90% and developed foundational knowledge across various subjects.',
       expanded: false
     }
   ];
