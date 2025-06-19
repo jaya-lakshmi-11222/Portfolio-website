@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTheme } from '../../App';
 import './Main.css';
-import HeadImage from '../../Assets/JayaImage.jpg';
+import HeadImage from '../../Assets/Perireddy.jpg';
 import {
   Linkedin,
   Github,
@@ -66,8 +66,8 @@ const MainSection = () => {
           <div className="intro-text">
             <p className="greeting">HELLO, <span className="name-label">I'm</span></p>
             <h1 className="name">
-              <span className="first-name">JAYA</span>
-              <span className="last-name">GUNNAM</span>
+              <span className="first-name">PERI REDDY</span>
+              <span className="last-name">VAKA</span>
             </h1>
           </div>
 
