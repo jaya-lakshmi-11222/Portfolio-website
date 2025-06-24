@@ -87,10 +87,9 @@
   background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
 }
 
-/* Achievement Icon */
+/* Achievement Icon Container */
 .achievement-icon {
   margin-bottom: 1.5rem;
-  color: #4ECDC4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,13 +98,21 @@
   margin: 0 auto 1.5rem;
   background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
   border-radius: 50%;
-  color: white;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .achievement-card:hover .achievement-icon {
   transform: scale(1.1);
   box-shadow: 0 10px 25px rgba(78, 205, 196, 0.3);
+}
+
+/* Achievement Image */
+.achievement-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* Achievement Title */
@@ -205,11 +212,6 @@
   .achievement-icon {
     width: 60px;
     height: 60px;
-  }
-
-  .achievement-icon svg {
-    width: 36px;
-    height: 36px;
   }
 
   .achievement-title {

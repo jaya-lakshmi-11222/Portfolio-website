@@ -33,7 +33,7 @@ const ContactPage = () => {
     };
 
     emailjs.send(
-      'service_e7uqzz9',
+      'service_x7k4aqg',
       'template_5wdph1e',
       templateParams,
       'ySZWgAcv43-YMkiHr'
